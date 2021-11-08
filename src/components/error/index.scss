@@ -1,0 +1,37 @@
+.error {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(black, 0.8);
+  top: 0;
+  z-index: 1;
+  &-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    p {
+      padding: 1rem;
+    }
+    button {
+      padding: 0.5rem 2rem;
+      background-color: lightblue;
+      border: none;
+      border-radius: 0.4rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .error-box {
+    width: 80%;
+  }
+}

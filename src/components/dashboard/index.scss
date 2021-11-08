@@ -1,0 +1,105 @@
+.dashboard {
+  width: 100vw;
+  height: 100vh;
+  &-header {
+    height: 10vh;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    p {
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
+  &-body {
+    width: 100vw;
+    display: flex;
+    padding: 2rem;
+    &-addRemainder {
+      padding: 0 1rem;
+      width: 50%;
+      input[type='text'],
+      input[type='date'],
+      input[type='time'] {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid lightblue;
+        border-radius: 0.4rem;
+        outline: none;
+        margin: 0.5rem 0;
+      }
+      textarea {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid lightblue;
+        border-radius: 0.4rem;
+        outline: none;
+        margin: 0.5rem 0;
+        resize: none;
+      }
+
+      input[type='checkbox'] {
+        padding: 1rem;
+        width: 2rem;
+        height: 1.3rem;
+        border: 1px solid lightblue;
+        border-radius: 0.4rem;
+        outline: none;
+        margin: 0.5rem 0;
+        background-color: lightblue;
+      }
+      span {
+        font-size: 1rem;
+        text-align: center;
+      }
+      button {
+        width: 100%;
+        padding: 1rem;
+        background-color: lightblue;
+        border: none;
+        border-radius: 0.4rem;
+        outline: none;
+        margin: 0.5rem 0;
+      }
+    }
+
+    &-allRemainder {
+      width: 50%;
+      &-todo-data {
+        padding: 1rem;
+        margin: 0.5rem;
+        border: 1px solid lightblue;
+        border-radius: 0.4rem;
+        &-flex {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        &-remainder {
+          margin-top: 0.5rem;
+          padding: 0.5rem 0;
+          border-top: 1px solid lightblue;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .dashboard-body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    &-addRemainder {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    &-allRemainder {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
