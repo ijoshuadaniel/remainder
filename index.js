@@ -15,12 +15,12 @@ const { deleteTodo } = require('./todo/deleteTodo');
 app.use(express.json(), Cors());
 
 let transporter = nodemailer.createTransport({
-  host: 'titan.int3rnet.net',
+  host: 'local
   port: 587,
   secure: false,
   auth: {
-    user: 'email@joshuadaniel.me',
-    pass: 'UeLeomQebwhN',
+    user: 'email',
+    pass: 'pass',
   },
 });
 
